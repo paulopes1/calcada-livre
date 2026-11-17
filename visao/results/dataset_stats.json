@@ -1,0 +1,62 @@
+{
+  "candidatas": 9253,
+  "corrompidas_removidas": 0,
+  "duplicatas_exatas_removidas": 1754,
+  "grupos_de_quase_duplicatas": 7139,
+  "descartadas_na_leitura": {
+    "so_classes_descartadas": 1140,
+    "rotulo_corrompido": 1,
+    "caixa_gigante": 19
+  },
+  "final": 7499,
+  "oversampling_treino": {
+    "piso_quebrado": 3
+  },
+  "splits": {
+    "train": {
+      "images": 6001,
+      "background": 401,
+      "oversampled_copies": 592,
+      "instances": {
+        "obstaculo": 6376,
+        "buraco": 1231,
+        "piso_quebrado": 328
+      },
+      "by_source": {
+        "unified_obstacles": 1371,
+        "potholes_rupesh": 455,
+        "rod": 4175
+      }
+    },
+    "val": {
+      "images": 749,
+      "background": 50,
+      "oversampled_copies": 0,
+      "instances": {
+        "obstaculo": 805,
+        "buraco": 154,
+        "piso_quebrado": 51
+      },
+      "by_source": {
+        "unified_obstacles": 170,
+        "potholes_rupesh": 61,
+        "rod": 518
+      }
+    },
+    "test": {
+      "images": 749,
+      "background": 50,
+      "oversampled_copies": 0,
+      "instances": {
+        "obstaculo": 755,
+        "buraco": 178,
+        "piso_quebrado": 37
+      },
+      "by_source": {
+        "unified_obstacles": 173,
+        "potholes_rupesh": 56,
+        "rod": 520
+      }
+    }
+  }
+}

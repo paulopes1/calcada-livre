@@ -1,0 +1,29 @@
+# dados e artefatos pesados (são recriados pelos scripts)
+data/
+runs/
+storage/
+*.raw.mp4
+*.part
+
+# pesos baixados automaticamente pelo Ultralytics (o modelo treinado em models/ É versionado)
+/yolo*.pt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# segredos e configuração local (LGPD: nada de credencial no repositório)
+.env
+*.env
+
+# sistema
+.DS_Store
+Thumbs.db
+
+
+# pasta local da demonstração (vídeos de terceiros, fotos e atalhos com caminhos do computador)
+demo/

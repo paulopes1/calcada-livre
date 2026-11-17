@@ -1,0 +1,10 @@
+{
+  "modelo_base": "yolo26n.pt",
+  "epocas_max": 100,
+  "epocas_executadas": 100,
+  "imgsz": 640,
+  "batch": 32,
+  "tempo_treino_min": 83.6,
+  "run_dir": "runs/yolo26n_calcada",
+  "observacao": "treino interrompido na época 61 e retomado do last.pt (resume=True), sem perda de estado do otimizador"
+}

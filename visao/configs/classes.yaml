@@ -1,0 +1,37 @@
+# Taxonomia final do Calçada Livre (3 classes) e mapeamento das classes dos datasets de origem.
+# Qualquer classe de origem que não aparece aqui é descartada (a caixa é removida).
+
+classes:
+  0: buraco          # buraco/cratera na calçada ou bueiro aberto: risco de queda e de prender a roda
+  1: obstaculo       # objeto que bloqueia a faixa livre: lixeira, poste, cone, cerca, banco, mesa/cadeira...
+  2: piso_quebrado   # piso rachado, quebrado ou desnivelado: risco de tropeço para idosos e cadeirantes
+
+sources:
+  unified_obstacles:          # Dderedor/obstacles_on_the_road (MIT) — visão de pedestre
+    open_manhole: buraco
+    pothole: buraco
+    hole: piso_quebrado         # no dataset de origem "hole" = trincas/rachaduras (трещина)
+    waste_container: obstaculo
+    pole: obstaculo
+    # descartadas após inspeção visual das amostras:
+    #   animal -> não é barreira fixa da calçada
+    #   bump   -> mistura meio-fio (normal) com desnível de placa: classe ambígua
+    #   fence  -> grades de proteção na BORDA da calçada; não bloqueiam a faixa livre e gerariam
+    #             falso positivo em praticamente toda rua
+
+  potholes_rupesh:            # rupesh002/pothole-detection-dataset (MIT) — reforço da classe buraco
+    pothole: buraco
+    # filtro de qualidade no build: imagens com caixa cobrindo > 70% da foto são descartadas
+
+  rod:                        # Abtinzandi/Obstacle-Detection-Dataset-YOLO (MIT) — visão de pedestre com celular
+    Dustbin: obstaculo
+    Electrical Pole: obstaculo
+    Traffic Cone: obstaculo
+    Teraffic Barrel: obstaculo   # grafia original do dataset
+    Plant Pot: obstaculo
+    Electrical Box: obstaculo
+    Bench: obstaculo
+    Fire hydrant: obstaculo
+    Bicycle Rack: obstaculo
+    Chair: obstaculo             # mesas e cadeiras de bar ocupando a calçada
+    # descartadas: veículos, pessoas, animais, prédios, árvores, faixa de pedestre, bueiro fechado, placas etc.

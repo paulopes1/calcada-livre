@@ -1,0 +1,110 @@
+{
+  "quadros_adaptacao": 157,
+  "oversampling": 4,
+  "quadros_teste_brasil": 55,
+  "epocas": 40,
+  "antes": {
+    "teste_original": {
+      "geral": {
+        "precisao": 0.8803,
+        "revocacao": 0.8205,
+        "mAP50": 0.86,
+        "mAP50_95": 0.5987
+      },
+      "por_classe": {
+        "buraco": {
+          "precisao": 0.7704,
+          "revocacao": 0.6742,
+          "mAP50": 0.7337,
+          "mAP50_95": 0.4137
+        },
+        "obstaculo": {
+          "precisao": 0.9483,
+          "revocacao": 0.9224,
+          "mAP50": 0.959,
+          "mAP50_95": 0.8125
+        },
+        "piso_quebrado": {
+          "precisao": 0.9222,
+          "revocacao": 0.8649,
+          "mAP50": 0.8874,
+          "mAP50_95": 0.57
+        }
+      }
+    },
+    "teste_brasil": {
+      "geral": {
+        "precisao": 0.837,
+        "revocacao": 0.3812,
+        "mAP50": 0.3864,
+        "mAP50_95": 0.3042
+      },
+      "por_classe": {
+        "obstaculo": {
+          "precisao": 0.674,
+          "revocacao": 0.7623,
+          "mAP50": 0.7286,
+          "mAP50_95": 0.5907
+        },
+        "piso_quebrado": {
+          "precisao": 1.0,
+          "revocacao": 0.0,
+          "mAP50": 0.0442,
+          "mAP50_95": 0.0177
+        }
+      }
+    }
+  },
+  "depois": {
+    "teste_original": {
+      "geral": {
+        "precisao": 0.8903,
+        "revocacao": 0.8142,
+        "mAP50": 0.8516,
+        "mAP50_95": 0.6038
+      },
+      "por_classe": {
+        "buraco": {
+          "precisao": 0.7989,
+          "revocacao": 0.6696,
+          "mAP50": 0.7207,
+          "mAP50_95": 0.4085
+        },
+        "obstaculo": {
+          "precisao": 0.931,
+          "revocacao": 0.911,
+          "mAP50": 0.9526,
+          "mAP50_95": 0.8087
+        },
+        "piso_quebrado": {
+          "precisao": 0.941,
+          "revocacao": 0.8619,
+          "mAP50": 0.8814,
+          "mAP50_95": 0.594
+        }
+      }
+    },
+    "teste_brasil": {
+      "geral": {
+        "precisao": 0.5226,
+        "revocacao": 0.5474,
+        "mAP50": 0.5269,
+        "mAP50_95": 0.4198
+      },
+      "por_classe": {
+        "obstaculo": {
+          "precisao": 0.8136,
+          "revocacao": 0.8947,
+          "mAP50": 0.9412,
+          "mAP50_95": 0.7909
+        },
+        "piso_quebrado": {
+          "precisao": 0.2316,
+          "revocacao": 0.2,
+          "mAP50": 0.1126,
+          "mAP50_95": 0.0486
+        }
+      }
+    }
+  }
+}

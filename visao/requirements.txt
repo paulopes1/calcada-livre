@@ -1,0 +1,23 @@
+# PyTorch com CUDA deve ser instalado antes (ver README):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+ultralytics==8.4.215
+lap>=0.5.12                # rastreamento ByteTrack
+opencv-python==4.14.0.94   # 4.x: o OpenCV 5 removeu os classificadores Haar usados no borrão de rostos/placas
+numpy==2.5.4
+pillow
+pyyaml
+imagehash
+requests
+huggingface_hub
+fastapi==0.163.1
+uvicorn[standard]
+python-multipart
+pandas
+matplotlib
+# testes, relatório e notebook
+pytest
+httpx
+reportlab==5.1.0
+nbformat
+nbconvert
+ipykernel

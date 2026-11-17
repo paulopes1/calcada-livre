@@ -1,0 +1,50 @@
+{
+  "modelo": "calcada_yolo11n",
+  "pesos": "models\\calcada_yolo11n.pt",
+  "imagens_teste": 749,
+  "geral": {
+    "precisao": 0.8262,
+    "revocacao": 0.8041,
+    "mAP50": 0.845,
+    "mAP50_95": 0.5864
+  },
+  "por_classe": {
+    "buraco": {
+      "precisao": 0.7544,
+      "revocacao": 0.6729,
+      "mAP50": 0.7139,
+      "mAP50_95": 0.3878
+    },
+    "obstaculo": {
+      "precisao": 0.8907,
+      "revocacao": 0.9285,
+      "mAP50": 0.9518,
+      "mAP50_95": 0.7957
+    },
+    "piso_quebrado": {
+      "precisao": 0.8336,
+      "revocacao": 0.8108,
+      "mAP50": 0.8693,
+      "mAP50_95": 0.5758
+    }
+  },
+  "velocidade": {
+    "fps_gpu_batch1": 67.3,
+    "fps_cpu_batch1": 26.0,
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "ms_por_imagem_val": {
+      "preprocess": 0.87,
+      "inference": 2.41,
+      "loss": 0.0,
+      "postprocess": 1.2
+    }
+  },
+  "contagem_conf_0.25_iou_0.5": {
+    "verdadeiros_positivos": 844,
+    "falsos_positivos": 176,
+    "falsos_negativos": 126,
+    "confusoes_de_classe": 0
+  },
+  "parametros": 2605369,
+  "tamanho_mb": 5.52
+}
